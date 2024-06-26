@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Welcome to My Unique GitHub Page!');
+  console.log('Welcome to Stealth I $RUN Whitepaper');
 });
