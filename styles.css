@@ -1,128 +1,88 @@
-/* General body styles */
 body {
-  font-family: 'Merriweather', serif; /* Use a modern serif font for headings */
-  background-color: #f0f0f5; /* Softer background color for better contrast */
-  margin: 0;
-  padding: 0;
-  line-height: 1.6; /* Better readability */
-  color: #333; /* Softer black for body text */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header section */
 header {
-  background-color: #1a1a1d; /* Darker header color for sleekness */
-  color: #fff;
-  padding: 1.5rem 0; /* Increased padding for breathing space */
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1.5rem 0;
   text-align: center;
-  position: sticky; /* Sticky header */
-  top: 0;
-  z-index: 1000;
 }
 
-header h1 {
-  font-family: 'Montserrat', sans-serif; /* Contrasting sans-serif font for headings */
-  font-size: 2.5rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-/* Navigation styles */
 nav ul {
   list-style: none;
   padding: 0;
+  display: inline-block;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 1.5rem; /* Increased margin for better spacing */
+  display: inline;
+  margin: 0 1.5rem;
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 0.5rem;
-  transition: color 0.3s ease; /* Smooth color transition */
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
-nav ul li a:hover {
-  color: #ffcc00; /* Brighter hover color */
-}
-
-/* Main content */
 main {
-  padding: 4rem 10%; /* Wider padding and dynamic sizing */
-  background-color: #fff; /* Light background for the content area */
+  padding: 3rem;
+  background-color: #fff;
+}
+
+section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background-color: #f2f2f2;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow to lift the content */
-  margin: 2rem auto; /* Centered main content */
-  max-width: 1200px; /* Limits the width of the content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-main h2 {
+h2 {
   font-family: 'Merriweather', serif;
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  text-align: center;
+  color: #111;
 }
 
-main p {
-  font-size: 1.125rem; /* Slightly larger text for readability */
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
   color: #555;
+}
+
+p {
   margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  color: #444;
 }
 
-/* Call-to-action buttons */
-button {
-  background-color: #ffcc00;
-  color: #1a1a1d;
-  border: none;
-  padding: 1rem 2rem;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+ul {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
 }
 
-button:hover {
-  background-color: #e6b800; /* Slightly darker hover effect */
-  transform: scale(1.05); /* Slightly bigger on hover */
-}
-
-/* Footer section */
 footer {
-  background-color: #1a1a1d;
+  background-color: #1a1a1a;
   color: #fff;
   text-align: center;
-  padding: 2rem 0;
-  font-family: 'Montserrat', sans-serif;
+  padding: 1rem 0;
   position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: 3rem;
 }
 
-footer p {
-  margin: 0;
-  font-size: 1rem;
+a {
+  color: #007BFF;
+  text-decoration: none;
 }
 
-/* Responsive styles for mobile devices */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  main {
-    padding: 2rem 5%;
-  }
+a:hover {
+  text-decoration: underline;
 }
