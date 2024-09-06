@@ -10,12 +10,26 @@ header {
   color: white;
   padding: 1.5rem 0;
   text-align: center;
+  position: sticky; /* Ensure header sticks to the top */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Make sure it's on top */
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+}
+
+nav {
+  margin: 0 auto; /* Center the nav */
+  display: inline-block;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
-  display: inline-block;
+  margin: 0; /* Remove default margin */
+  display: inline-block; /* Center the navigation */
 }
 
 nav ul li {
