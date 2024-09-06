@@ -12,6 +12,19 @@ header {
   text-align: center;
 }
 
+ul {
+  padding-left: 1.5rem; /* Indents the bullet points */
+  margin-bottom: 1.5rem; /* Adds some spacing between lists and next section */
+}
+
+li {
+  margin-bottom: 0.5rem; /* Adds spacing between individual bullet points */
+  font-size: 1.05rem; /* Slightly larger font for better readability */
+}
+
+li::marker {
+  color: #007BFF; /* Blue bullet points for better visual contrast */
+}
 nav ul {
   list-style: none;
   padding: 0;
