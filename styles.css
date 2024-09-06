@@ -1,42 +1,128 @@
+/* General body styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Merriweather', serif; /* Use a modern serif font for headings */
+  background-color: #f0f0f5; /* Softer background color for better contrast */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  line-height: 1.6; /* Better readability */
+  color: #333; /* Softer black for body text */
 }
 
+/* Header section */
 header {
-  background-color: #333;
+  background-color: #1a1a1d; /* Darker header color for sleekness */
   color: #fff;
-  padding: 1rem 0;
+  padding: 1.5rem 0; /* Increased padding for breathing space */
   text-align: center;
+  position: sticky; /* Sticky header */
+  top: 0;
+  z-index: 1000;
 }
 
+header h1 {
+  font-family: 'Montserrat', sans-serif; /* Contrasting sans-serif font for headings */
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Navigation styles */
 nav ul {
   list-style: none;
   padding: 0;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 1rem;
+  display: inline-block;
+  margin: 0 1.5rem; /* Increased margin for better spacing */
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  transition: color 0.3s ease; /* Smooth color transition */
 }
 
+nav ul li a:hover {
+  color: #ffcc00; /* Brighter hover color */
+}
+
+/* Main content */
 main {
-  padding: 2rem;
+  padding: 4rem 10%; /* Wider padding and dynamic sizing */
+  background-color: #fff; /* Light background for the content area */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Subtle shadow to lift the content */
+  margin: 2rem auto; /* Centered main content */
+  max-width: 1200px; /* Limits the width of the content */
 }
 
+main h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main p {
+  font-size: 1.125rem; /* Slightly larger text for readability */
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Call-to-action buttons */
+button {
+  background-color: #ffcc00;
+  color: #1a1a1d;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800; /* Slightly darker hover effect */
+  transform: scale(1.05); /* Slightly bigger on hover */
+}
+
+/* Footer section */
 footer {
-  background-color: #333;
+  background-color: #1a1a1d;
   color: #fff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 2rem 5%;
+  }
 }
